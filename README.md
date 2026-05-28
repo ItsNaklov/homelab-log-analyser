@@ -24,3 +24,4 @@ A simple automated script that scans Linux security logs (`auth.log`) for failed
 ```bash
 chmod +x ~/homelab-log-analyser/analyse.logs.sh
 ```
+# homelab-log-analyser
