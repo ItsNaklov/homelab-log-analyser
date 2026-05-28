@@ -1,4 +1,4 @@
-# Homelab SSH Log Analyzer
+# Homelab SSH Log Analyser
 
 A simple automated script that scans Linux security logs (`auth.log`) for failed SSH login attempts, filters out false alarms, and displays a clean status dashboard whenever you log into your server.
 
