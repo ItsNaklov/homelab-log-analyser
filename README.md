@@ -1,5 +1,3 @@
-cat << 'EOF' > ~/homelab-log-analyser/README.md
-
 # Homelab SSH Log Analyzer
 
 A simple automated script that scans Linux security logs (`auth.log`) for failed SSH login attempts, filters out false alarms, and displays a clean status dashboard whenever you log into your server.
@@ -24,4 +22,5 @@ A simple automated script that scans Linux security logs (`auth.log`) for failed
 ```bash
 chmod +x ~/homelab-log-analyser/analyse.logs.sh
 ```
+
 # homelab-log-analyser
