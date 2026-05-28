@@ -1,0 +1,11 @@
+Ini, TOML
+
+[Unit]
+Description=Run Automated Host Security Log Analyser
+After=netkwork.target
+
+
+[Service]
+Type=oneshot
+ExecStart=/home/homelab/homelab-log-analyser/analyse.logs.sh
+User=root
