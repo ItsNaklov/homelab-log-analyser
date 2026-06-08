@@ -18,11 +18,11 @@ fi
 # Extract malicious SSH attempts
 grep -E "sshd.*Invalid user" "$LOG_FILE" | awk '{print $10}' | sort | uniq -c | sort -nr >"$TEMP_RAW"
 
-# Check if we found any hackers
+# Check if we found anyone login
 if [ ! -s "$TEMP_RAW" ]; then
   echo -e "SYSTEM STATUS: SECURE\nNo unauthorized access attempts detected during this window." >"$REPORT_FILE"
 else
-  # Build a beautiful, human-readable dashboard inside the text file
+  # Dashboard inside the text file
   echo -e "SYSTEM STATUS: WARNING - UNAUTHORIZED ATTEMPTS DETECTED\n" >"$REPORT_FILE"
   echo -e "ATTEMPTS    TARGET USERNAME" >>"$REPORT_FILE"
   echo -e "----------  ----------------" >>"$REPORT_FILE"
